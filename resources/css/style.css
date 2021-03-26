@@ -1,20 +1,37 @@
+body {
+    font-family: sans-serif;
+}
+
+
 header {
-    display: inline-flex;
     height: 64px;
     padding-left: 24px;
+}
+
+header nav {
+    float: right;
+    padding: 18px 8px;
+    max-height: 64px;
+}
+
+a {
+    font-size: large;
+    padding-right: 16px;
 }
 
 .logo {
     display: inline-flex;
     align-items: center;
     font-size: large;
-    font-weight: bold;
-    
+    font-weight: bold;  
 }
 
 header .imagelogo {
-    height: 3rem;
-    
+    height: 3rem; 
+}
+
+header .mobile {
+    display: none;
 }
 
 .logoname2 {
@@ -22,7 +39,52 @@ header .imagelogo {
     color: grey;
 }
 
-main .lorumipsum {
-    background-color: rgb(196, 190, 190);
-    height: 200px;
-}
+#features {
+    display: flex;
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+  }
+  
+  #features .image-container {
+    padding: 32px 24px;
+    width: 60%;
+  }
+  
+  #features .image-container img {
+    max-width: 100%;
+  }
+  
+  
+  
+   
+  @media only screen and (max-width: 720px) {
+    #features {
+      flex-flow: column;
+    }
+
+    header .mobile {
+     display: flex;
+     justify-content:space-around;
+     width: 100%;
+    }
+
+    header nav {
+     display: none;
+    }
+
+    #features .image-container {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+      }
+
+    #features .content {
+    
+      padding: 32px 16px;
+      margin: 0 auto;
+    }
+    .logoname, .logoname2, .logo {
+        display: none;
+    }
+    
+  }

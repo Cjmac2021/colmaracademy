@@ -1,0 +1,28 @@
+header {
+    display: inline-flex;
+    height: 64px;
+    padding-left: 24px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+header .imagelogo {
+    height: 3rem;
+    
+}
+
+.logoname2 {
+    font-weight: normal;
+    color: grey;
+}
+
+main .lorumipsum {
+    background-color: rgb(196, 190, 190);
+    height: 200px;
+}

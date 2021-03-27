@@ -26,6 +26,10 @@ a {
     font-weight: bold;  
 }
 
+.top {
+  color: rgb(82, 82, 82);
+  text-decoration: none;
+}
 header .imagelogo {
     height: 3rem; 
 }
@@ -57,6 +61,7 @@ header .mobile {
   #features .content {
     margin: auto 0; 
     flex: 1;
+    padding-bottom: 20px;
   }
   
   #features .content h1 {
@@ -67,15 +72,18 @@ header .mobile {
 
   #features .content h3 {
     color:rgb(85, 85, 85);
+    font-size: 1.6rem;
   }
 
   #features .content button {
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(107, 107, 107);
     border: none;
     padding: 8px;
     width: 250px;
-    color: white
-  }
+    color: white;
+    font-weight: bold;
+   }
+
   @media only screen and (max-width: 720px) {
     #features {
       flex-flow: column;
@@ -93,22 +101,31 @@ header .mobile {
 
     #features .image-container {
         width: 100%;
-        height: 100%;
         padding: 0;
       }
 
     #features .content {
-    
-      padding: 32px 16px;
-      margin: 0 auto;
-    }
+        padding: 32px 16px;
+      }
+
     .logoname, .logoname2, .logo {
         display: none;
     }
 
     h1 {
+      margin-top: 0px;
       font-size: 2rem;
     }
     
+    #features .content button {
+      margin-top: 14px;
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(165, 165, 165);
+      
+    }
+    #features .content h3 {
+      margin: 10px 0px
+    }
   }
   

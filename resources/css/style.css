@@ -127,5 +127,39 @@ header .mobile {
     #features .content h3 {
       margin: 10px 0px
     }
+  
+  }
+
+  #practice {
+    display: flex;
+    width: 100%;
+    flex:1;
+  }
+  #practice .image-container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    max-width: 60%;
+  }
+
+  .info {
+    padding: 16px 16px;
+    width: 40%;
+  }
+
+  .info-container {
+    display: flex;
+    padding: 16px 16px;
+  }
+
+  .info-image {
+    width: 35%;
+    height: auto;
+  }
+
+  #practice .content {
+    margin: auto 16px;
+    width: 65%;
+
   }
   

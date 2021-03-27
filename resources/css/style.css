@@ -54,9 +54,28 @@ header .mobile {
     max-width: 100%;
   }
   
+  #features .content {
+    margin: auto 0; 
+    flex: 1;
+  }
   
-  
-   
+  #features .content h1 {
+    max-width: 100%;
+    font-size: 3rem;
+    color: rgb(85, 85, 85);
+  }
+
+  #features .content h3 {
+    color:rgb(85, 85, 85);
+  }
+
+  #features .content button {
+    background-color: rgb(73, 73, 73);
+    border: none;
+    padding: 8px;
+    width: 250px;
+    color: white
+  }
   @media only screen and (max-width: 720px) {
     #features {
       flex-flow: column;
@@ -86,5 +105,10 @@ header .mobile {
     .logoname, .logoname2, .logo {
         display: none;
     }
+
+    h1 {
+      font-size: 2rem;
+    }
     
   }
+  

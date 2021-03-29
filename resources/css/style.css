@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
+    margin: 0px;
 }
-
 
 header {
     height: 64px;
@@ -23,15 +23,16 @@ a {
     display: inline-flex;
     align-items: center;
     font-size: large;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 .top {
-  color: rgb(82, 82, 82);
-  text-decoration: none;
+    color: rgb(82, 82, 82);
+    text-decoration: none;
 }
+
 header .imagelogo {
-    height: 3rem; 
+    height: 3rem;
 }
 
 header .mobile {
@@ -46,120 +47,200 @@ header .mobile {
 #features {
     display: flex;
     background-color: rgb(221, 221, 221);
-    width: 100%;
-  }
-  
-  #features .image-container {
+}
+
+.image-container,
+.image-container0 {
     padding: 32px 24px;
-    width: 60%;
-  }
-  
-  #features .image-container img {
-    max-width: 100%;
-  }
-  
-  #features .content {
-    margin: auto 0; 
+    max-width: 60%;
+}
+
+.image-container img,
+.image-container0 img {
+    width: 100%;
+}
+
+#features .content {
+    margin: auto 0;
     flex: 1;
     padding-bottom: 20px;
-  }
-  
-  #features .content h1 {
+    max-width: 400px;
+    padding-left: 24px;
+}
+
+#features .content h1 {
     max-width: 100%;
     font-size: 3rem;
     color: rgb(85, 85, 85);
-  }
+}
 
-  #features .content h3 {
-    color:rgb(85, 85, 85);
+#features .content h3 {
+    color: rgb(85, 85, 85);
     font-size: 1.6rem;
-  }
+}
 
-  #features .content button {
+#features .content button {
     background-color: rgb(107, 107, 107);
     border: none;
     padding: 8px;
     width: 250px;
+}
+
+.button {
     color: white;
-    font-weight: bold;
-   }
+}
 
-  @media only screen and (max-width: 720px) {
+a {
+    text-decoration: none;
+    color: rgb(92, 92, 255);
+}
+
+@media only screen and (max-width: 720px) {
     #features {
-      flex-flow: column;
+        flex-flow: column;
     }
-
     header .mobile {
-     display: flex;
-     justify-content:space-around;
-     width: 100%;
-    }
-
-    header nav {
-     display: none;
-    }
-
-    #features .image-container {
+        display: flex;
+        justify-content: space-around;
         width: 100%;
-        padding: 0;
-      }
-
-    #features .content {
-        padding: 32px 16px;
-      }
-
-    .logoname, .logoname2, .logo {
+    }
+    header nav {
         display: none;
     }
-
-    h1 {
-      margin-top: 0px;
-      font-size: 2rem;
+    .image-container {
+        max-width: 100%;
     }
-    
+    #features,
+    .image-container,
+    .image-container0 {
+        width: 100%;
+        padding: 0;
+    }
+    #features .content {
+        padding: 32px 16px;
+    }
+    .logoname,
+    .logoname2,
+    .logo {
+        display: none;
+    }
+    h1 {
+        margin-top: 0px;
+        font-size: 2rem;
+    }
     #features .content button {
-      margin-top: 14px;
-      width: 100%;
-      padding: 10px;
-      background-color: rgb(165, 165, 165);
-      
+        margin-top: 14px;
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(165, 165, 165);
     }
     #features .content h3 {
-      margin: 10px 0px
+        margin: 10px 0px
     }
-  
-  }
+    .image-container0 {
+        display: none;
+    }
+    .info .info-container1,
+    .info .info-container2,
+    .info .guest {
+        display: none;
+    }
+    .mobile-container .info-image {
+        max-width: 100%;
+    }
+    #practice .info {
+        width: 100%;
+    }
+    .content {
+        padding-left: 32px;
+    }
+    .content {
+        padding-bottom: 16px;
+    }
+    .info {
+        padding-bottom: 16px;
+    }
+}
 
-  #practice {
-    display: flex;
-    width: 100%;
-    flex:1;
-  }
-  #practice .image-container {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 24px;
-    max-width: 60%;
-  }
+@media only screen and (min-width: 720px) {
+    .mobile-container {
+        display: none;
+    }
+}
 
-  .info {
-    padding: 16px 16px;
+#practice {
+    display: flex;
+}
+
+.main-content h1 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    color: rgb(85, 85, 85);
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0px;
+    color: rgb(85, 85, 85);
+}
+
+.main-content p {
+    margin-bottom: 0px;
+    max-width: 598px;
+    color: grey;
+}
+
+.content p {
+    margin: 8px 0px;
+    color: grey;
+}
+
+.info {
+    padding-top: 16px;
     width: 40%;
-  }
+    border-left: solid rgb(212, 212, 212) 1px;
+}
 
-  .info-container {
-    display: flex;
-    padding: 16px 16px;
-  }
-
-  .info-image {
-    width: 35%;
+.info-image {
+    padding: 16px;
+    max-width: 35%;
     height: auto;
-  }
+}
 
-  #practice .content {
-    margin: auto 16px;
-    width: 65%;
+.info-image img {
+    width: 100%;
+}
 
-  }
-  
+.info-container1,
+.info-container2,
+.guest {
+    display: flex;
+}
+
+.info-container1 {
+    border-bottom: solid rgb(212, 212, 212) 1px;
+    margin-bottom: 1px;
+}
+
+.info-container2 {
+    border-top: solid rgb(212, 212, 212) 1px;
+}
+
+.content {
+    margin: auto 0;
+    max-width: 260px;
+}
+
+.guest {
+    background-color: rgb(212, 212, 212);
+}
+
+.ref {
+    margin-top: 94px;
+}
+
+#learning {
+    background-color: rgb(224, 224, 224);
+    height: 300px;
+}

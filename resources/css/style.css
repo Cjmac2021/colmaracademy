@@ -11,7 +11,6 @@ header {
 header nav {
     float: right;
     padding: 18px 8px;
-    max-height: 64px;
 }
 
 a {
@@ -24,11 +23,17 @@ a {
     align-items: center;
     font-size: large;
     font-weight: bold;
+    
 }
 
 .top {
     color: rgb(82, 82, 82);
     text-decoration: none;
+}
+
+nav :hover {
+    box-shadow: 0 0 20px 9px rgb(209, 207, 207);
+cursor: pointer;
 }
 
 header .imagelogo {
@@ -44,9 +49,12 @@ header .mobile {
     color: grey;
 }
 
+                                /* Features Section */
+
 #features {
     display: flex;
     background-color: rgb(221, 221, 221);
+    width: 100%;
 }
 
 .image-container,
@@ -87,7 +95,7 @@ header .mobile {
 }
 
 .button {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 a {
@@ -173,6 +181,8 @@ h2 {
     margin-top: 94px;
 }
 
+                                        /* Learning Section */
+
 #learning {
     background-color: rgb(224, 224, 224);
 }
@@ -209,19 +219,137 @@ h2 {
     color: grey;
 }
 
+.text-box a{
+    color: rgb(95, 95, 95);
+    font-weight: bold;
+}
+
+.text-box h2 :hover{
+    box-shadow: 0 0 20px 9px rgb(224, 222, 222);
+    cursor: pointer;
+}
+ /* Thesis Section */
+
+#thesis h1{
+    color: rgb(153, 153, 153);
+    text-align: center;
+    padding-top: 32px;
+    margin: 0;
+}
+
+.thesis-container {
+    height: auto;
+    display: flex;
+    width: 100%;
+    padding-top: 32px;
+}
+
+.urban {
+    padding: 0 24px;
+    width: 60%;
+}
+
+.vid video{
+    width: 100%;
+}
+
+.link-container {
+    width: 40%
+}
+
+.indi-link1,.indi-link2 {
+    display: flex;
+}
+
+.indi-link1 {
+    background-color: rgb(223, 223, 223);
+}
+
+.link-img img {
+    width: 100%;
+}
+
+.link-img {
+    width: 35%;
+    padding: 16px;
+}
+
+.link-text {
+    width: 65%;
+    margin: auto 0;
+    color: grey;
+}
+
+.vid-txt {
+    padding-top: 24px;
+}
+
+.vid-txt p {
+    margin-top: 8px;
+    margin-bottom: 32px;
+    color: grey;
+}
+
+footer {
+    border-top: solid rgb(211, 211, 211) 1px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-bottom: 48px;
+    padding-right: 10px;
+    font-size: x-small;
+    color: grey;
+}
+
+footer li {
+    float: right;
+    list-style: none;
+    padding: 0 5px;  
+}
+
+footer a {
+    font-size: x-small;
+    color: grey;
+}
+
 @media only screen and (max-width: 720px) {
     /* Header, Features & Practice Mobile Section  */
     #features {
         flex-flow: column;
     }
+
+    header {
+        padding: 0px;
+    }
+
+    header nav {
+        height: 64px;
+    }
+
     header .mobile {
         display: flex;
         justify-content: space-around;
         width: 100%;
+        padding: 0;
     }
+
+    header .mobile :hover {
+        box-shadow: 0 0 20px 9px rgb(224, 222, 222);
+        cursor: pointer;
+    }
+
+    header nav a{
+        padding: 0px;
+    }
+    .mobile a {
+        margin: auto;
+    }
+
     header nav {
         display: none;
     }
+
     .image-container {
         max-width: 100%;
     }
@@ -308,12 +436,35 @@ h2 {
         margin: 8px;
     }
 
+    .text-box h2 :hover{
+        box-shadow: 0 0 20px 9px rgb(255, 255, 255);
+        cursor: pointer;
+    }
     .text-box p {
         display: none;
     }
-}
+    
+    /* Thesis Section mobile */
 
-.thesis {
-    height: 500px;
-    background-color: khaki;
+    .thesis-container {
+        padding-top: 16px;
+    }
+
+    .link-container, .vid-txt {
+        display: none;
+    }
+
+    .urban {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .vid video {
+        display: flex;
+    }
+
+    footer {
+        padding-top: 40px;
+        padding-bottom: 16px;
+    }
 }
